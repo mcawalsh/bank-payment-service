@@ -11,6 +11,6 @@ public interface IPaymentSchemeValidator
     /// </summary>
     /// <param name="account">The account to validate against.</param>
     /// <param name="paymentRequest">The payment request to validate.</param>
-    /// <returns>True if the payment request is valid; otherwise, false.</returns>
+    /// <returns>A ValidationResult indicating whether the validation was successful and any error messages if it was not.</returns>
     ValidationResult Validate(Account? account, MakePaymentRequest paymentRequest);
 }
